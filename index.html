@@ -1,0 +1,879 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<style>
+body{
+  margin: 50px;
+  padding: 50px;
+
+}
+div {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.topbar{
+  background-color: #212529;
+  padding: 0;
+}
+
+.topbar .container .row {
+  margin:-20px;
+  padding:0;
+}
+
+.topbar .container .row .col-md-12 { 
+  padding:0;
+}
+
+.topbar p{
+  margin:0;
+  display:inline-block;
+  font-size: 13px;
+  color: #f1f6ff;
+}
+
+.topbar p > i{
+  margin-right:5px;
+}
+.topbar p:last-child{
+  text-align:right;
+} 
+.header .navbar {
+    margin-bottom: 0;
+}
+
+.topbar li.topbar {
+    display: inline;
+    padding-right: 18px;
+    line-height: 52px;
+    transition: all .3s linear;
+}
+
+.topbar li.topbar:hover {
+    color: #1bbde8;
+}
+
+.topbar ul.info i {
+    color: #131313;
+    font-style: normal;
+    margin-right: 8px;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+
+.topbar ul.info li {
+    float: right;
+    padding-left: 30px;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 44px;
+}
+
+.topbar ul.info i span {
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 50px;
+    padding-left: 18px;
+}
+
+ul.social-network {
+  border:none;
+  margin:0;
+  padding:0;
+}
+
+ul.social-network li {
+  border:none;  
+  margin:0;
+}
+
+ul.social-network li i {
+  margin:0;
+}
+ul.social-network li {
+    display:inline;
+    margin: 0 5px;
+    border: 0px solid #2D2D2D;
+    padding: 5px 0 0;
+    width: 32px;
+    display: inline-block;
+    text-align: center;
+    height: 32px;
+    vertical-align: baseline;
+    color: #000;
+}
+
+ul.social-network {
+  list-style: none;
+  margin: 5px 0 10px -25px;
+  float: right;
+}
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    will-change: opacity, transform;
+    transition: .3s ease-out;
+    color: #fff;
+}
+a {
+  color: #0a0a0a;
+  text-decoration: none;
+}
+
+li {
+  margin-top: -10px;
+    list-style-type: none;
+}
+
+.navbar {
+  margin: -20px;
+  padding: 0;
+}
+.navbar-brand {
+  margin-top: -10px;
+}
+
+.jumbotron{
+  margin-top: -30px;
+  background-color: rgb(211, 34, 34);
+  background-image: url("https://scontent.fdac5-1.fna.fbcdn.net/v/t1.15752-9/194228480_299768648512196_7633270278937221306_n.png?_nc_cat=105&ccb=1-3&_nc_sid=ae9488&_nc_ohc=VZhyPDI42tUAX_6A28R&tn=Zy1RsFhkx3zvo3vZ&_nc_ht=scontent.fdac5-1.fna&oh=8627bd7137f6734a5f3149ff74d148e6&oe=60E28F9B"); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  text-emphasis-color: white;
+  text-decoration-color: aliceblue;
+  button-color: blue
+} 
+.lead {
+  padding-top: 200px;
+}
+
+.circular--square {
+  padding-left: 10px;
+  padding-top: 5px;
+  width: 200px;
+ height: 200px;
+ background-image: url('https://d3iw72m71ie81c.cloudfront.net/female-20.jpeg');
+ background-size: cover;
+ display: block;
+ border-radius: 120px;
+ -webkit-border-radius: 120px;
+ -moz-border-radius: 120px;
+}
+.card-title {
+  padding-left: 20px;
+  padding-top: 15px;
+}
+.Robin{
+  padding-left: 550px;
+  list-style: bold;
+  text-style: bold;
+  font-size: initial;
+}
+
+.robin1 {
+  background-image: url("https://scontent.fdac5-1.fna.fbcdn.net/v/t1.15752-9/189052379_348630176619441_4394152658261122945_n.png?_nc_cat=110&ccb=1-3&_nc_sid=ae9488&_nc_ohc=8z_96iNTvmEAX_f2aYZ&tn=Zy1RsFhkx3zvo3vZ&_nc_ht=scontent.fdac5-1.fna&oh=48dc27acbff83aaa39aa607311477c83&oe=60E36D15");  
+  background-size: 10px 20px;
+  padding-top: 100px;
+  width: 1250px; 
+  height: 200000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  text-color: white;
+}
+
+.robin111 {
+  padding-left: 100px;
+  padding-top: 5px;
+  width: 200px;
+ height: 200px;
+ background-image: url('https://d3iw72m71ie81c.cloudfront.net/female-20.jpeg');
+ background-size: cover;
+ display: block;
+ border-radius: 120px;
+ -webkit-border-radius: 120px;
+ -moz-border-radius: 120px;
+}
+.card header {
+    margin-bottom: 0;
+    background-color: blue;
+    border-bottom: 1px solid rgba(4, 17, 192, 0.74);
+}
+
+.footer-section {  
+  background: #8dd0e4;  
+  position: relative; 
+  text-emphasis-position: absulate; 
+}  
+.footer-cta {  
+  border-bottom: 1px solid #373636;  
+}  
+.single-cta i {  
+  color: #ff5e14;  
+  font-size: 30px;  
+  float: left;  
+  margin-top: 8px;  
+}  
+.cta-text {  
+  padding-left: 15px;  
+  display: inline-block;  
+}  
+.cta-text h4 {  
+  color: #fff;  
+  font-size: 20px;  
+  font-weight: 600;  
+  margin-bottom: 2px;  
+}  
+.cta-text span {  
+  color: #757575;  
+  font-size: 15px;  
+}  
+
+.footer-content {  
+  position: relative;  
+  z-index: 2;  
+}  
+.footer-pattern img {  
+  position: absolute;  
+  top: 0;  
+  left: 0;  
+  height: 330px;  
+  background-size: cover;  
+  background-position: 100% 100%;  
+}  
+.footer-logo {  
+  margin-bottom: 30px;  
+}  
+.footer-logo img {  
+    max-width: 200px;  
+}  
+.footer-text p {  
+  margin-bottom: 14px;  
+  font-size: 14px;  
+      color: #7e7e7e;  
+  line-height: 28px;  
+}  
+.footer-social-icon span {  
+  color: #fff;  
+  display: block;  
+  font-size: 20px;  
+  font-weight: 700;  
+  font-family: 'Poppins', sans-serif;  
+  margin-bottom: 20px;  
+}  
+.footer-social-icon a {  
+  color: #fff;  
+  font-size: 16px;  
+  margin-right: 15px;  
+}  
+.footer-social-icon i {  
+  height: 40px;  
+  width: 40px;  
+  text-align: center;  
+  line-height: 38px;  
+  border-radius: 50%;  
+}  
+.facebook-bg{  
+  background: #3B5998;  
+}  
+.twitter-bg{  
+  background: #55ACEE;  
+}  
+.google-bg{  
+  background: #DD4B39;  
+}  
+.footer-widget-heading h3 {  
+  color: #fff;  
+  font-size: 20px;  
+  font-weight: 600;  
+  margin-bottom: 40px;  
+  position: relative;  
+}  
+.footer-widget-heading h3::before {  
+  content: "";  
+  position: absolute;  
+  left: 0;  
+  bottom: -15px;  
+  height: 2px;  
+  width: 50px;  
+  background: #ff5e14;  
+}  
+.footer-widget ul li {  
+  display: inline-block;  
+  float: left;  
+  width: 50%;  
+  margin-bottom: 12px;  
+}  
+.footer-widget ul li a:hover{  
+  color: #ff5e14;  
+}  
+.footer-widget ul li a {  
+  color: #878787;  
+  text-transform: capitalize;  
+}  
+.subscribe-form {  
+  position: relative;  
+  overflow: hidden;  
+}  
+.subscribe-form input {  
+  width: 100%;  
+  padding: 14px 28px;  
+  background: #2E2E2E;  
+  border: 1px solid #2E2E2E;  
+  color: #fff;  
+}  
+.subscribe-form button {  
+    position: absolute;  
+    right: 0;  
+    background: #ff5e14;  
+    padding: 13px 20px;  
+    border: 1px solid #ff5e14;  
+    top: 0;  
+}  
+.subscribe-form button i {  
+  color: #fff;  
+  font-size: 22px;  
+  transform: rotate(-6deg);  
+}  
+.copyright-area{  
+  background: #bbb6b6;  
+  padding: 10px;
+  position: static;
+  margin-left: -65px;
+  margin-right: -65px;
+  margin-bottom: -50px;
+}  
+.copyright-text p {  
+  margin: 0;  
+  font-size: 14px;  
+  color: #878787;  
+}  
+.copyright-text p a{  
+  color: #ff5e14;  
+}  
+.footer-menu li {  
+  display: inline-block;  
+  margin-left: 20px;  
+}  
+.footer-menu li:hover a{  
+  color: #ff5e14;  
+}  
+.footer-menu li a {  
+  font-size: 14px;  
+  color: #878787;  
+}  
+.display-5 {
+  padding-left: 50px;
+}
+.display-5 {
+  padding-left: 450px;
+}
+
+.card-title-1 {
+  color: whitesmoke;
+}
+.card-text-11 {
+  color: whitesmoke;
+}
+.card-img-bottom {
+  color: #fff;
+  background: url( image/n1.png);
+  background-size: cover;
+  width: 1000px; 
+  height: 500px;
+}
+.card222-button {
+  margin-left: 50px;
+}
+
+</style>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootst">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="mystyle.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hello, world!</title>
+
+      <div class="topbar">
+          <div class="container">
+            <div class="row">
+              <!-- social icon-->
+              <div class="col-sm-12">
+                <ul class="social-network">
+                  <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a></li>
+                  <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a></li>
+                  <p><i class="fa fa-phone"></i> <pr> <pr></pr>+0608822 </p>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+      <a class="navbar-brand" id="navbar-brand" href="#">
+        <img src="image/rrrrr.png" alt="" width="90" height="90" aria-placeholder="active"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-brand mb-0 h1"></span>
+    </button>
+    <div class="navbar navbar-expand-sm" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">永灃國際</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> 理財資訊通</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">貸款過件免煩惱</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">公司介紹</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">貸款流程</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">成功案例</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">免費諮詢 </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="jumbotron">
+  <p></p>
+  <pre></pre>
+  <pre></pre>
+  <pre></pre>
+  <p></p>
+  <pre></pre>
+  <pre></pre>
+  <pre></pre>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p class="lead">
+    <a class="btn btn-primary" href="#" role="button" style="margin:px;">金融理財顧問專業分析</a>
+    <a class="btn btn-primary" href="#" role="button">金融理財顧問專業分析</a>
+    <a class="btn btn-primary" href="#" role="button">維護客戶隱私保密個資</a>
+  </p>
+</div>
+  </head>
+  <body>
+
+    <div class="Robin">
+          <h5 class="card-title-1" position="center" padding-left: 50px; >Best One Seller</h5>
+    </div>
+
+
+
+
+
+    <div class="row row-cols-1 row-cols-md-2 g-2" style="max-width: 2000px;">
+      <div class="col">
+        <div class="card">
+          <div class="card-header card-header-color"></div>
+      <div class="row  g-0">
+        <div class="col-md-4">
+          <h5 class="card-title">許先生 高雄市 核貸30萬 月付3,964</h5>
+          <img class="circular--square" src="image/r222.png" alt="width="150" height="200" aria-placeholder="active">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">許先生 高雄市 核貸30萬 月付3,964</h5>
+            <p class="card-text">許先生是陸軍中士職業軍人，每月薪資45,000左右，>br> 
+                      服役地點在左營，近日來車子被砸壞需要維修，<br>
+                      加上還有每月車貸8,000要繳。經永灃國際行銷債務整合後，<br>
+                      每個月只要繳3,964，輕鬆不少！<br>
+             </p>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div><br>
+      <div class="col">
+        <div class="card"> <div class="card-header card-header-color"></div>
+      <div class="row g-0">
+        <div class="col-md-4">
+          <h5 class="card-title">許先生 高雄市 核貸30萬 月付3,964</h5>
+          <img class="circular--square" src="image/r222.png" alt="width="150" height="200" aria-placeholder="active">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">許先生 高雄市 核貸30萬 月付3,964</h5>
+            <p class="card-text">許先生是陸軍中士職業軍人，每月薪資45,000左右，>br> 
+                      服役地點在左營，近日來車子被砸壞需要維修，<br>
+                      加上還有每月車貸8,000要繳。經永灃國際行銷債務整合後，<br>
+                      每個月只要繳3,964，輕鬆不少！<br>
+            </p>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+      </div>
+  
+    <br>
+
+    <div class="row row-cols-1 row-cols-md-2 g-2" style="max-width: 2000px;">
+      <div class="col">
+        <div class="card">
+          <div class="card-header card-header-color"></div>
+      <div class="row g-0">
+        <div class="col-md-4">
+          <h5 class="card-title">許先生 高雄市 核貸30萬 月付3,964</h5>
+          <img class="circular--square" src="image/r222.png" alt="width="150" height="200" aria-placeholder="active">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">許先生 高雄市 核貸30萬 月付3,964</h5>
+            <p class="card-text">許先生是陸軍中士職業軍人，每月薪資45,000左右，>br> 
+                      服役地點在左營，近日來車子被砸壞需要維修，<br>
+                      加上還有每月車貸8,000要繳。經永灃國際行銷債務整合後，<br>
+                      每個月只要繳3,964，輕鬆不少！<br>
+             </p>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card"><div class="card-header card-header-color"></div>
+      <div class="row g-0">
+        <div class="col-md-4">
+           <h5 class="card-title">許先生 高雄市 核貸30萬 月付3,964</h5>
+          <img class="circular--square" src="image/r222.png" alt="width="150" height="200" aria-placeholder="active">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">許先生 高雄市 核貸30萬 月付3,964</h5>
+            <p class="card-text">許先生是陸軍中士職業軍人，每月薪資45,000左右，>br> 
+                      服役地點在左營，近日來車子被砸壞需要維修，<br>
+                      加上還有每月車貸8,000要繳。經永灃國際行銷債務整合後，<br>
+                      每個月只要繳3,964，輕鬆不少！<br>
+             </p>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+      </div>
+
+
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+    </div>  
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+ 
+
+        <div class="card">  
+          <h1 class="display-5"></h1>
+             
+               
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card222">
+              
+                    <div class="card-footer text-center">
+                        
+                    </div>
+                    <div class="card-body">   
+                      <p><i class="fa fa-user"></i> <pr> <pr></pr>許先生 高雄市 核貸30萬 </p><br>
+                        <p><i class="fa fa-phone"></i> <pr> <pr></pr>+0608822 </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card222">
+                    
+                    <div class="card-footer text-center">
+                        
+                    </div>
+                    <div class="card-body">
+              
+                      <p><i class="fa fa-circle-o"></i> <pr> <pr></pr>許先生 高雄市 核貸30萬 </p><br> 
+                        <p><i class="fa fa-clock-o"></i> <pr> <pr></pr>高雄市 核貸30萬 </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card22">
+                    
+                    <div class="card-footer text-center">
+                  
+                  </div>
+                    <div class="card-body">
+                      <p><i class="fa fa-"></i> <pr> <pr></pr>許先生 高雄市 核貸30萬 </p><br>
+                        <p><i class="fa fa-bars"></i> <pr> <pr></pr>高雄市 核貸30萬 </p>
+                    </div>
+                  </div>
+                </div>
+              </div>      
+</div>
+<section>
+  <div class="container">
+    <div class="card1">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card-block">
+            <h4 class="card-title">Curabitur gravida vestibulum imperdiet.</h4>
+            <p class="card-text">Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem. Integer sed mi quis nisl eleifend interdum.</p>
+            <p class="card-text">Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card-img-bottom">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section>
+  <div class="row row-cols-1" style="max-width: 10000px;">
+    <div class="col">
+      <div class="robin1">
+        <div class="card-header card-header-"></div>
+    <div class="row  g-0">
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title-1"> 許先生 高雄市 核貸30萬 月付3,964</h5>
+          <p class="card-text-11">許先生是陸軍中士職業軍人，每月薪資45,000左右，>br> 
+            服役地點在左營，近日來車子被砸壞需要維修，<br>
+            加上還有每月車貸8,000要繳。經永灃國際行銷債務整合後，<br>
+            每個月只要繳3,964，輕鬆不少！<br>許先生是陸軍中士職業軍人，每月薪資45,000左右，>br> 
+            服役地點在左營，近日來車子被砸壞需要維修，<br>
+            加上還有每月車貸8,000要繳。經永灃國際行銷債務整合後，<br>
+            每個月只要繳3,964，輕鬆不少！<br>
+            許先生是陸軍中士職業軍人，每月薪資45,000左右，>br> 
+            服役地點在左營，近日來車子被砸壞需要維修，<br>
+            加上還有每月車貸8,000要繳。經永灃國際行銷債務整合後，<br>
+            每個月只要繳3,964，輕鬆不少！<br>
+            
+        </div>
+      </div>
+      </div>
+      </div>
+    </div><br>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    
+    -->
+    <script src="jquery-3.5.1.min.js"></script>
+    <!-- JS files: jQuery first, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript"> 
+            $('.slider').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+    </script>
+  
+  
+  
+  </body>
+
+
+
+
+
+
+    <footer class="footer-section">  
+      <div class="container">  
+        <h1 class="display-5">Hello, world!</h1>
+          <div class="footer-cta pt-5 pb-5">  
+             
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card222">
+                  <img src="image/mobile.png"class="card-img-top" alt="...">
+                  <div class="card-footer text-center">
+                      <button class="btn1 btn-primary btn-lg btn-block roun" type="button" id="more">輕鬆不少</button>
+                  </div>
+                  <div class="card-body">   
+                    <p class="card-text">許先生是陸軍中士職業軍人，每月薪資45,000左右，>br> 
+                      服役地點在左營，近日來車子被砸壞需要維修，<br>
+                      加上還有每月車貸8,000要繳。經永灃國際行銷債務整合後，<br>
+                      每個月只要繳3,964，輕鬆不少</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card222">
+                  <img src="image/money.png" class="card-img-top" alt="width="150" height="350">
+                  <div class="card-footer text-center">
+                      <button class="btn1 btn-primary btn-lg btn-block roun" type="button" id="more">輕鬆不少</button>
+                  </div>
+                  <div class="card-body">
+            
+                    <p class="card-text">許先生是陸軍中士職業軍人，每月薪資45,000左右，>br> 
+                      服役地點在左營，近日來車子被砸壞需要維修，<br>
+                      加上還有每月車貸8,000要繳。經永灃國際行銷債務整合後，<br>
+                      每個月只要繳3,964，輕鬆不少</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card22">
+                  <img src="image/doller.png" class="card-img-top" alt="...">
+                  <div class="card-footer text-center">
+                    <button class="btn1 btn-primary btn-lg btn-block roun" type="button" id="more">輕鬆不少 </button>
+                </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">許先生是陸軍中士職業軍人，每月薪資45,000左右，>br> 
+                      服役地點在左營，近日來車子被砸壞需要維修，<br>
+                      加上還有每月車貸8,000要繳。經永灃國際行銷債務整合後，<br>
+                      每個月只要繳3,964，輕鬆不少</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+       
+      <div class="copyright-area">  
+          <div class="container">  
+              <div class="row">  
+                  <div class="col-xl-6 col-lg-6 text-center text-lg-left">  
+                      <div class="copyright-text">  
+                          <p> Copyright © 2018, All Right Reserved </p>  
+                      </div>  
+                  </div>  
+                  <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">  
+                      <div class="footer-menu">  
+                          <ul>  
+                              <li> <a href="#"> 貸款過件免煩惱</a> </li>  
+                              <li> <a href="#"> 貸款過件免煩惱 </a> </li>  
+                              <li> <a href="#"> 貸款過件免煩惱 </a> </li>  
+                              <li> <a href="#"> 貸款過件免煩惱 </a> </li>  
+                              <li> <a href="#"> 貸款過件免煩惱a </a> </li>  
+                          </ul>  
+                      </div>  
+                  </div>  
+              </div>  
+          </div>  
+      </div>  
+  </footer>  
+</html>
+
+
